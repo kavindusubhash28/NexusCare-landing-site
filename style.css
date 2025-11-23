@@ -89,6 +89,46 @@ body {
 
 
 /* innovation section */
+.innovations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+.innovation-card {
+    background-color: var(--bg-white);
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.innovation-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+.innovation-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+.innovation-icon-bg {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--primary-teal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1.5rem auto;
+}
+.innovation-icon-bg svg {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+
+
+
 
 
 
