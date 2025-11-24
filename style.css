@@ -86,7 +86,27 @@ body {
 
 
 
-
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.feature-card {
+    background-color: var(--bg-white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-bottom: 4px solid var(--primary-teal);
+}
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+.feature-card p {
+    color: var(--text-light);
+}
 
 /* innovation section */
 
