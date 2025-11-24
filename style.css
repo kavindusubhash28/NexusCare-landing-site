@@ -76,8 +76,143 @@ body {
 
 /* Hero Section */
 
+.hero {
+    color: var(--bg-white);
+    padding: 6rem 0;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+.hero-title-accent {
+    background: linear-gradient(135deg, #ffffff 0%, #90e0ef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 1rem;
+    max-width: 550px;
+}
+.hero-text .btn {
+    margin-top: 2rem;
+}
 
+/* Hero mockup image (replaces the HTML mockup block) */
+.hero-mockup-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 420px;
+    margin: 0 auto;
+    overflow: hidden; /* crop image inside fixed frame */
+    border: 8px solid #333; /* fixed frame */
+    border-radius: 2rem;
+    box-shadow: 0 30px 60px -15px rgba(0,0,0,0.3);
+}
+.hero-mockup-image {
+    width: 110%; /* slightly larger so we can shift/crop the image */
+    height: auto;
+    border-radius: 0; /* container provides rounded frame */
+    box-shadow: none;
+    border: none; /* remove border from image */
+    display: block;
+    transform: translateX(8%); /* nudge content under the fixed frame */
+    object-fit: cover;
+    object-position: center right;
+    transition: transform 0.3s ease;
+}
 
+/* Utility & small helpers used across sections */
+.section {
+    padding: 5rem 0;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.section-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+.bg-light {
+    background-color: var(--bg-light);
+}
+.gradient-bg {
+    background: var(--gradient);
+}
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 99px; /* Full pill shape */
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.btn-primary {
+    background-color: var(--primary-teal);
+    color: var(--bg-white);
+}
+.btn-primary:hover {
+    background-color: #248a7f;
+    box-shadow: 0 6px 20px rgba(42, 157, 143, 0.4);
+    transform: translateY(-2px);
+}
+.btn-light {
+    background-color: var(--bg-white);
+    color: var(--primary-blue);
+}
+.btn-light:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+.btn-dark {
+    background-color: #2d3748; /* Dark Gray */
+    color: var(--bg-white);
+}
+.btn-dark:hover {
+    background-color: #1a202c;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+.animated-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.animated-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
