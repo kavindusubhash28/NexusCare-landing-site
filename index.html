@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexusCare - Landing Page</title>
+    <title>NexusCare - Your Smart Health Record</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
-    <!--Navigation Bar-->
+
+    <!-- Navbar -->
     <nav class="navbar sticky">
         <div class="container">
             <a href="#" class="logo">Nexus<span class="logo-accent">Care</span></a>
             <ul class="nav-links">
-                <li><a href="#problem">Problem</a></li>
-                <li><a href="#innovation">Innovation</a></li>
+                <li><a href="#innovation">Innovations</a></li>
                 <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="#team">Our Team</a></li>
             </ul>
             <a href="#download" class="btn btn-primary">Get App</a>
         </div>
     </nav>
 
-    <!--Hero Section-->
-<header class="hero gradient-bg">
+    <!-- Header / Hero Section -->
+    <header class="hero gradient-bg">
         <div class="container hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">Your Health. Your Data.</h1>
@@ -40,9 +39,172 @@
         </div>
     </header>
 
+    <!-- Overview: Problem + Solution (Eye-catching) -->
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <h2 class="overview-main-title">The Problem — And Our Bold Solution</h2>
+            
+            <!-- Problem Section -->
+            <div class="problem-section">
+                <div class="section-header">
+                    <div class="section-icon problem-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                        </svg>
+                    </div>
+                    <h3 class="section-label">The Challenge</h3>
+                </div>
+                <p class="problem-description">Healthcare centers in Sri Lanka still rely heavily on manual systems, causing delays, missing records, and limited access to patient data across regions. In emergencies, doctors can't access a patient's history instantly.</p>
+                
+                <div class="problem-challenges">
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚠️</div>
+                        <div class="challenge-content">
+                            <h4>Delays & Missing Records</h4>
+                            <p>Manual paperwork leads to lost files and critical delays</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">🔒</div>
+                        <div class="challenge-content">
+                            <h4>Regional Data Silos</h4>
+                            <p>Patient data trapped in isolated clinic systems</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">🚨</div>
+                        <div class="challenge-content">
+                            <h4>Emergency Access Gaps</h4>
+                            <p>No instant access to vital patient information during emergencies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!--Problem Statement Section-->
+            <!-- Solution Section -->
+            <div class="solution-section">
+                <div class="section-header">
+                    <div class="section-icon solution-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                        </svg>
+                    </div>
+                    <h3 class="section-label">Meet NexusCare</h3>
+                </div>
+                
+                <p class="solution-intro">NexusCare is an AI-powered mobile app that gives every patient a single, static QR code — a secure key linked to their unique ID (not their raw medical data). When scanned, the system recognizes the user's role and shows only what they're permitted to see.</p>
 
+                <div class="role-access-grid">
+                    <div class="role-access-card">
+                        <div class="role-access-header">
+                            <div class="role-badge doctor-badge">👨‍⚕️</div>
+                            <h4>Doctors</h4>
+                        </div>
+                        <p>Full medical record access, update history, request labs.</p>
+                    </div>
+                    <div class="role-access-card">
+                        <div class="role-access-header">
+                            <div class="role-badge pharmacist-badge">💊</div>
+                            <h4>Pharmacists</h4>
+                        </div>
+                        <p>View active e-prescriptions to safely dispense meds.</p>
+                    </div>
+                    <div class="role-access-card">
+                        <div class="role-access-header">
+                            <div class="role-badge lab-badge">🔬</div>
+                            <h4>Registered Labs</h4>
+                        </div>
+                        <p>See doctor-requested tests, upload results directly.</p>
+                    </div>
+                    <div class="role-access-card">
+                        <div class="role-access-header">
+                            <div class="role-badge ems-badge">🚑</div>
+                            <h4>Emergency Responders</h4>
+                        </div>
+                        <p>(With consent) view vital details like blood type and allergies.</p>
+                    </div>
+                </div>
+
+                <div class="solution-features">
+                    <div class="feature-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                        <span>Strong Security</span>
+                    </div>
+                    <div class="feature-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+                        <span>Patient Control</span>
+                    </div>
+                    <div class="feature-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                        </svg>
+                        <span>AI Health Agent</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Preview & Security Section -->
+            <div class="preview-security-grid">
+                <div class="card role-card">
+                    <div class="card-header">
+                        <h4>Try Role Preview</h4>
+                        <p class="card-subtitle">See what each role sees when scanning the QR code</p>
+                    </div>
+                    <div class="role-buttons">
+                        <button class="role-btn" data-role="doctor">👨‍⚕️ Doctor</button>
+                        <button class="role-btn" data-role="pharmacist">💊 Pharmacist</button>
+                        <button class="role-btn" data-role="lab">🔬 Lab</button>
+                        <button class="role-btn" data-role="ems">🚑 Emergency</button>
+                    </div>
+                    <div class="role-preview" id="role-preview">
+                        <div class="role-preview-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                            </svg>
+                            <strong>Role view will appear here</strong>
+                            <p>Select a role above to preview what they'd see when scanning the static QR code.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card highlight-card">
+                    <div class="card-header">
+                        <div class="highlight-eyebrow">🔐 Why It Works</div>
+                        <h3 class="highlight-stat">Secure Key + Role Gatekeeping</h3>
+                    </div>
+                    <div class="security-explanation">
+                        <div class="security-point">
+                            <div class="security-icon">🔑</div>
+                            <div>
+                                <h5>Binding Key to Server ID</h5>
+                                <p>The QR code is a secure key linked to a server-managed unique ID</p>
+                            </div>
+                        </div>
+                        <div class="security-point">
+                            <div class="security-icon">🛡️</div>
+                            <div>
+                                <h5>No Sensitive Data in Code</h5>
+                                <p>No medical data is stored in the QR code itself</p>
+                            </div>
+                        </div>
+                        <div class="security-point">
+                            <div class="security-icon">👁️</div>
+                            <div>
+                                <h5>Strict Access Rules</h5>
+                                <p>Only auditable, role-based access rules reveal records per role</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement Section -->
     <section id="problem" class="container section fade-in">
         <h2 class="section-title">Why Paper Fails in Healthcare</h2>
         <p class="section-subtitle">Manual systems are slow, insecure, and disconnected. In an emergency, this lack of access to data can be life-threatening.</p>
@@ -62,7 +224,7 @@
         </div>
     </section>
 
-    <!--Innovation Section-->
+    <!-- Innovations Section -->
     <section id="innovation" class="section bg-light fade-in">
         <div class="container">
             <h2 class="section-title">NexusCare Core Innovations</h2>
@@ -104,95 +266,87 @@
         </div>
     </section>
 
-
-
-
-
-
-    <!--Benefits Section-->
+    <!-- Benefits/Stakeholder Section -->
     <section id="benefits" class="container section fade-in">
-    <h2 class="section-title">Built for the Entire Care Ecosystem</h2>
-    <div class="benefits-grid">
-        <div class="benefit-card">
-            <h3>Patients</h3>
-            <p>Feel safer with the Emergency QR, get personalized AI advice, and control your own health data.</p>
+        <h2 class="section-title">Built for the Entire Care Ecosystem</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Patients</h3>
+                <p>Feel safer with the Emergency QR, get personalized AI advice, and control your own health data.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Doctors</h3>
+                <p>Save time with instant access to full patient histories, lab reports, and efficient e-prescribing.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Pharmacists</h3>
+                <p>Eliminate handwriting errors, reduce fraud, and build customer loyalty with easy digital refill requests.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Clinics</h3>
+                <p>Increase revenue with integrated appointment booking and digital payments, reducing patient no-shows.</p>
+            </div>
+                <div class="benefit-card">
+                    <h3>Labs</h3>
+                    <p>Lab staff can upload verified test results directly to patient profiles so doctors and patients can access lab reports securely through the app.</p>
+                </div>
         </div>
-        <div class="benefit-card">
-            <h3>Doctors</h3>
-            <p>Save time with instant access to full patient histories, lab reports, and efficient e-prescribing.</p>
-        </div>
-        <div class="benefit-card">
-            <h3>Pharmacists</h3>
-            <p>Eliminate handwriting errors, reduce fraud, and build customer loyalty with easy digital refill requests.</p>
-        </div>
-        <div class="benefit-card">
-            <h3>Clinics</h3>
-            <p>Increase revenue with integrated appointment booking and digital payments, reducing patient no-shows.</p>
-        </div>
-        <div class="benefit-card">
-            <h3>Labs</h3>
-            <p>Lab staff can upload verified test results directly to patient profiles so doctors and patients can access lab reports securely through the app.</p>
-        </div>
-    </div>
     </section>
 
-
-
-
-    <!--Team Section-->
-<section id="team" class="section bg-light fade-in">
+    <!-- Meet Our Team Section -->
+    <section id="team" class="section bg-light fade-in">
         <div class="container">
             <h2 class="section-title">Meet the Team</h2>
             <p class="section-subtitle">We are a dedicated group of 6 students passionate about using technology to solve real-world health challenges in Sri Lanka.</p>
             <div class="team-grid">
-                <!-- Team members  -->
+                <!-- Team members (6 columns) -->
                 <div class="team-member animated-card">
                     <img src="https://placehold.co/100x100/0f4c75/ffffff?text=S" alt="Subhash">
-                    <h3>Subhash Rajapaksha</h3>
+                    <h3>Subhash</h3>
                     <p>Team Lead / Deployment</p>
                 </div>
                 <div class="team-member animated-card">
                     <img src="https://placehold.co/100x100/2a9d8f/ffffff?text=Y" alt="Yasira">
-                    <h3>Yasira Mandinu</h3>
+                    <h3>Yasira</h3>
                     <p>Patient App Lead</p>
                 </div>
                 <div class="team-member animated-card">
                     <img src="https://placehold.co/100x100/0f4c75/ffffff?text=C" alt="Chamathka">
-                    <h3>Chamathka Kariyawasam</h3>
+                    <h3>Chamathka</h3>
                     <p>Doctor & Pharmacist Portals</p>
                 </div>
                 <div class="team-member animated-card">
                     <img src="https://placehold.co/100x100/2a9d8f/ffffff?text=B" alt="Bulani">
-                    <h3>Bulani Laknara</h3>
+                    <h3>Bulani</h3>
                     <p>Data & UI/UX Analysis</p>
                 </div>
                 <div class="team-member animated-card">
                     <img src="https://placehold.co/100x100/0f4c75/ffffff?text=D" alt="Dilukshi">
-                    <h3>Dilukshi Warangana</h3>
+                    <h3>Dilukshi</h3>
                     <p>Pharmacist UI & Feedback</p>
                 </div>
                 <div class="team-member animated-card">
                     <img src="https://placehold.co/100x100/2a9d8f/ffffff?text=R" alt="Roshela">
-                    <h3>Roshela Nethmi</h3>
+                    <h3>Roshela</h3>
                     <p>Backend & Data Lead</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!--Footer Section-->
+    <!-- Call to Action / Footer -->
     <footer id="download" class="footer gradient-bg">
         <div class="container">
-            <h2>Ready to Transform HealthCare in Sri Lanka?</h2>
-            <p>Download the NexusCare app and bring efficiency, security, and intelligence to your health journey</p>
+            <h2>Ready to Transform Healthcare in Sri Lanka?</h2>
+            <p>Download the NexusCare app and bring efficiency, security, and intelligence to your health journey.</p>
             <div class="footer-buttons">
                 <a href="#" class="btn btn-light">Get on Google Play</a>
-                <a href="#" class="btn btn-light">Download on App Store</a>
+                <a href="#" class="btn btn-dark">Download on App Store</a>
             </div>
-            <p class="footer-note">© 2024 NexusCare. All rights reserved.</p>
-            <p class="footer-note mandate">A Project for SDGP (CS-158) | Aligned with UN SDG 3 & 10.</p>
+            <p class="footer-note">A Project for SDGP CS-158 | Aligned with UN SDG 3 & 10.</p>
+            <p class="footer-note mandate">Visit our official website: <a href="https://NexusCareApp.lk" style="color: rgba(255,255,255,0.9); text-decoration: underline;">NexusCareApp.lk</a></p>
         </div>
     </footer>
+
 </body>
 </html>
