@@ -72,11 +72,16 @@ img {
     animation: splashContentFadeIn 0.8s ease-out;
 }
 .splash-logo-wrapper {
-    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 .splash-logo {
     height: 120px;
     width: auto;
+    display: block;
+    margin: 0 auto;
     animation: logoFloat 2s ease-in-out infinite;
     filter: drop-shadow(0 10px 30px rgba(255, 255, 255, 0.3));
 }
